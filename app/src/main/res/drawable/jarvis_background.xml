@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- base deep-space black -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/background" />
+        </shape>
+    </item>
+    <!-- soft cyan glow radiating from center, Jarvis HUD style -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="420dp"
+                android:centerX="0.5"
+                android:centerY="0.42"
+                android:startColor="#3300E5FF"
+                android:centerColor="#1400E5FF"
+                android:endColor="#0001050A" />
+        </shape>
+    </item>
+</layer-list>

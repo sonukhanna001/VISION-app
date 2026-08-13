@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jarvis_background">
+
+    <!-- decorative HUD rings, centered behind the whole layout like an arc-reactor field -->
+    <View
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:background="@drawable/jarvis_ring_outer" />
+
+    <View
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:background="@drawable/jarvis_ring_mid" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/app_name"
+            android:textColor="@color/accent"
+            android:textSize="28sp"
+            android:letterSpacing="0.15"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="@string/tap_to_speak"
+            android:textColor="@color/textSecondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/recognizedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/micButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/mic_button_bg"
+            android:contentDescription="@string/tap_to_speak"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:tint="#E8FBFF" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/logText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textColor="@color/textSecondary"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <color name="background">#01050A</color>
+    <color name="backgroundGlow">#04182A</color>
+    <color name="accent">#00E5FF</color>
+    <color name="accentDim">#0091A8</color>
+    <color name="ringColor">#1AC8E8</color>
+    <color name="textPrimary">#E8FBFF</color>
+    <color name="textSecondary">#5FA9C4</color>
+</resources>
